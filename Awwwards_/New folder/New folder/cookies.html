@@ -1,0 +1,281 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/all.css"/>
+        <link rel="stylesheet" href="css/index_style.css"/>
+     </head>
+    
+    <body>
+         <!-------------------- HEADER----------------------------->
+      <div class="w-100 fixed-top">
+        <div class="header p-2">
+          <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-md-4 py-1">
+                  <select class="language">
+                      <option value="volvo">English</option>
+                      <option value="saab">French</option>
+                      <option value="mercedes">Spanish</option>
+                    </select>
+              </div>
+              <div class="col-md-4 py-1">
+                  <form>
+                      <input class="form-control" type="search" placeholder="Search.." aria-label="Search">
+                  </form>
+              </div>
+              <div class="col-md-4 py-1">
+                  <div class="float-right">
+                  <span class="px-2 login" data-toggle="modal" style="cursor: pointer" data-target="#exampleModal">REGISTER / LOG IN</span>
+                  <a href="submit.html"><button id="submitBtn" class="btn " routerLink="submit">SUBMIT YOUR SITE!</button></a>
+                  
+                      </div>
+              </div>
+          </div>
+      </div>
+    <!------------------------------------------------------->
+      
+    <!-------------------- nav ----------------------------->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+  <a class="navbar-brand" href="#">aWWWards</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="home.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="winners.html">Winners</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="nominees.html" >Nominees</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="collections.html" >Collections</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="professional-directory.html" >Professional Dierctory</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="about-us.html">About Us</a>
+
+    </li>       
+  </ul>
+  </div>
+  </nav>
+
+</div>
+
+<div id="space" class="w-100 bg-danger"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content p-3">
+        <div class="modal-header">
+          <div class="row">
+            <div class="col-sm-5">
+              <p>Sign in to continue </p>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-5">
+                <span>Not a member yet? </span>
+                <span class="register" data-toggle="modal" data-target="#exampleModal2" data-dismiss="modal">Register now</span>
+              </div>
+
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+            <input class="form-control" placeholder="Enter your E-mail"/>
+            <input class="form-control my-2" placeholder="Enter your password"/>
+            <input type="checkbox"/>
+            <label class="p-1">Keep me logged in</label>
+            <div class="text-center">
+            <button class="btn btn-secondary my-2">LogIn now</button>
+          </div>
+            <a href="#">Forgot your password</a>
+        </div>
+        <div >
+            <p>Or sign in with</p>  
+          <div class="text-center">
+              
+                <button class="btn btn-primary ">Facebook</button>
+                <button class="btn btn-light mx-2">Google</button>
+                <button class="btn btn-outline-info">Twitter</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="row">
+                <div class="col-sm-5">
+                  <p>Register with</p>
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-5">
+                    <span>AreyouAmember?</span>
+                    <span class="register" data-toggle="modal" data-target="#exampleModal" data-dismiss="modal">Login now</span>
+                  </div>
+    
+              </div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body m-auto">
+              <div>
+                <button class="btn btn-primary ">Facebook</button>
+                <button class="btn btn-light mx-2">Google</button>
+                <button class="btn btn-outline-info">Twitter</button>
+            </div>
+            </div>
+            <div class="p-2">
+              <div class="text-center">
+                <p>Or with your E-mail</p>
+                <input class="form-control" placeholder="Enter your name"/>
+                <input class="form-control my-2" placeholder="Enter your E-mail"/>
+                <input class="form-control" placeholder="Enter your password"/>
+                <input class="form-control my-2" placeholder="re-password"/>
+                <input type="checkbox"/>
+                <label class="p-1"> I accept the Terms and Conditions and Privacy Policy</label>
+                <button class="btn btn-secondary my-2">REGISTER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!----------------------------------------------------------------------------------->
+        
+        
+        <div class="beforeHeader"></div>
+        
+        <section class="titleHeader p-5">
+
+    <div class="line"></div>
+    <p style="font-weight: bolder ; font-size: 35px">Cookies Policy</p>
+    <div class="w-50 py-3">
+        <p>As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies.</p>
+    </div>
+
+    <div class="headerImg"></div>
+
+    <div class="info p-5 my-5">
+            <p style="font-weight: bolder ; font-size: 18px">What Are Cookies</p>
+            <div class="line"></div>
+            <p class="py-2">As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.</p>
+            <p>For more general information on cookies see the Wikipedia article on HTTP Cookies https://en.wikipedia.org/wiki/HTTP_cookie.</p>
+    </div>
+
+    <div class="info p-5 my-5">
+            <p style="font-weight: bolder ; font-size: 18px">Disabling Cookies</p>
+            <div class="line"></div>
+            <p class="py-2">You can prevent the setting of cookies by adjusting the settings on your browser (see your browser Help for how to do this). Be aware that disabling cookies will affect the functionality of this and many other websites that you visit. Disabling cookies will usually result in also disabling certain functionality and features of the this site. Therefore it is recommended that you do not disable cookies.</p>
+            
+    </div>
+
+
+    <div class="info p-5 my-5">
+            <p style="font-weight: bolder ; font-size: 18px">The Cookies We Set</p>
+            <div class="line"></div>
+            <p class="py-2">If you create an account with us then we will use cookies for the management of the signup process and general administration. These cookies will usually be deleted when you log out however in some cases they may remain afterwards to remember your site preferences when logged out.</p>
+
+            <p class="py-2">We use cookies when you are logged in so that we can remember this fact. This prevents you from having to log in every single time you visit a new page. These cookies are typically removed or cleared when you log out to ensure that you can only access restricted features and areas when logged in.</p>
+
+            <p class="py-2">This site offers newsletter or email subscription services and cookies may be used to remember if you are already registered and whether to show certain notifications which might only be valid to subscribed/unsubscribed users.</p>
+
+            <p class="py-2">This site offers e-commerce or payment facilities and some cookies are essential to ensure that your order is remembered between pages so that we can process it properly.</p>
+
+            <p class="py-2">When you submit data to through a form such as those found on contact pages or comment forms cookies may be set to remember your user details for future correspondence.</p>
+            
+    </div>
+
+
+    <div class="info p-5 my-5">
+            <p style="font-weight: bolder ; font-size: 18px">Third Party Cookies</p>
+            <div class="line"></div>
+            <p class="py-2">In some special cases we also use cookies provided by trusted third parties. The following section details which third party cookies you might encounter through this site.</p>
+
+            <p class="py-2">This site uses Google Analytics which is one of the most widespread and trusted analytics solution on the web for helping us to understand how you use the site and ways that we can improve your experience. These cookies may track things such as how long you spend on the site and the pages that you visit so we can continue to produce engaging content.</p>
+
+            <p class="py-2">For more information on Google Analytics cookies, see the official Google Analytics page.</p>
+
+            <p class="py-2">From time to time we test new features and make subtle changes to the way that the site is delivered. When we are still testing new features these cookies may be used to ensure that you receive a consistent experience whilst on the site whilst ensuring we understand which optimisations our users appreciate the most.</p>
+
+            <p class="py-2">The Google AdSense service we use to serve advertising uses a DoubleClick cookie to serve more relevant ads across the web and limit the number of times that a given ad is shown to you.</p>
+
+            <p class="py-2">For more information on Google AdSense see the official Google AdSense privacy FAQ.</p>
+
+            <p class="py-2">We also use social media buttons and/or plugins on this site that allow you to connect with your social network in various ways. For these to work the following social media sites including; facebook, twitter, will set cookies through our site which may be used to enhance your profile on their site or contribute to the data they hold for various purposes outlined in their respective privacy policies.</p>
+            
+    </div>
+
+
+    <div class="info p-5 my-5">
+            <p style="font-weight: bolder ; font-size: 18px">More Information</p>
+            <div class="line"></div>
+            <p class="py-2">Hopefully that has clarified things for you and as was previously mentioned if there is something that you aren't sure whether you need or not it's usually safer to leave cookies enabled in case it does interact with one of the features you use on our site. However if you are still looking for more information then you can contact us through one of our preferred contact methods.</p>
+
+            <p class="py-2">Email: <a href="#">awwwards@awwwards.com</a></p>
+
+            <p class="py-2">We also use social media buttons and/or plugins on this site that allow you to connect with your social network in various ways. For these to work the following social media sites including; facebook, twitter, will set cookies through our site which may be used to enhance your profile on their site or contribute to the data they hold for various purposes outlined in their respective privacy policies.</p>
+            
+    </div>
+
+
+</section>
+        
+        
+        
+        
+        
+        <!----------------------------------------------------------------------------------->
+      <section>
+    <div class="p-5">
+        <div class="d-flex justify-content-between">
+            <div>
+                <p>The awards for design, creativity and innovation on the Internet</p>
+            </div>
+            <div>
+                <span>Next Conferences <a class="px-3" href="#"> New York</a> and <a class="px-3" href="#">Tokyo</a></span>
+            </div>
+        </div>
+        <div class="my-4">
+
+            <a class="pr-3" href="professional-directory.html">Directory</a>
+            <a class="pr-3" href="jobs.html">Jobs</a>
+            <a class="pr-3" href="contact.html">Contact Us</a>
+            <a class="pr-3" href="cookies.html">Cookies Policy</a>
+            <a class="pr-3" href="terms.html">Legal Terms</a>
+            <a class="pr-3" href="policy.html"> Privacy Policy</a>
+            
+        </div>
+        <div>   
+            <span>Private Cloud by <a class="px-2" href="#">Stackscale</a></span>
+        </div>
+
+    </div>
+
+</section>
+ <!----------------------------------------------------------------------------------->       
+        
+        
+        
+    <script src="js/jquery-3.3.1.min.js"></script>    
+    <script src="js/popper.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>  
+    <script src="js/wow.js"></script> 
+    <script src="js/index.js"></script>  
+     </body>
+</html>

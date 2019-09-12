@@ -1,0 +1,809 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/all.css"/>
+        <link rel="stylesheet" href="css/index_style.css"/>
+     </head>
+    
+    <body>
+         <!-------------------- HEADER----------------------------->
+      <div class="w-100 fixed-top">
+        <div class="header p-2">
+          <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-md-4 py-1">
+                  <select class="language">
+                      <option value="volvo">English</option>
+                      <option value="saab">French</option>
+                      <option value="mercedes">Spanish</option>
+                    </select>
+              </div>
+              <div class="col-md-4 py-1">
+                  <form>
+                      <input class="form-control" type="search" placeholder="Search.." aria-label="Search">
+                  </form>
+              </div>
+              <div class="col-md-4 py-1">
+                  <div class="float-right">
+                  <span class="px-2 login" data-toggle="modal" style="cursor: pointer" data-target="#exampleModal">REGISTER / LOG IN</span>
+                  <a href="submit.html"><button id="submitBtn" class="btn " routerLink="submit">SUBMIT YOUR SITE!</button></a>
+                  
+                      </div>
+              </div>
+          </div>
+      </div>
+    <!------------------------------------------------------->
+      
+    <!-------------------- nav ----------------------------->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+  <a class="navbar-brand" href="#">aWWWards</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="home.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="winners.html">Winners</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="nominees.html" >Nominees</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="collections.html" >Collections</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="professional-directory.html" >Professional Dierctory</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="about-us.html">About Us</a>
+
+    </li>       
+  </ul>
+  </div>
+  </nav>
+
+</div>
+
+<div id="space" class="w-100 bg-danger"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content p-3">
+        <div class="modal-header">
+          <div class="row">
+            <div class="col-sm-5">
+              <p>Sign in to continue </p>
+            </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-5">
+                <span>Not a member yet? </span>
+                <span class="register" data-toggle="modal" data-target="#exampleModal2" data-dismiss="modal">Register now</span>
+              </div>
+
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+            <input class="form-control" placeholder="Enter your E-mail"/>
+            <input class="form-control my-2" placeholder="Enter your password"/>
+            <input type="checkbox"/>
+            <label class="p-1">Keep me logged in</label>
+            <div class="text-center">
+            <button class="btn btn-secondary my-2">LogIn now</button>
+          </div>
+            <a href="#">Forgot your password</a>
+        </div>
+        <div >
+            <p>Or sign in with</p>  
+          <div class="text-center">
+              
+                <button class="btn btn-primary ">Facebook</button>
+                <button class="btn btn-light mx-2">Google</button>
+                <button class="btn btn-outline-info">Twitter</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="row">
+                <div class="col-sm-5">
+                  <p>Register with</p>
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-5">
+                    <span>AreyouAmember?</span>
+                    <span class="register" data-toggle="modal" data-target="#exampleModal" data-dismiss="modal">Login now</span>
+                  </div>
+    
+              </div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body m-auto">
+              <div>
+                <button class="btn btn-primary ">Facebook</button>
+                <button class="btn btn-light mx-2">Google</button>
+                <button class="btn btn-outline-info">Twitter</button>
+            </div>
+            </div>
+            <div class="p-2">
+              <div class="text-center">
+                <p>Or with your E-mail</p>
+                <input class="form-control" placeholder="Enter your name"/>
+                <input class="form-control my-2" placeholder="Enter your E-mail"/>
+                <input class="form-control" placeholder="Enter your password"/>
+                <input class="form-control my-2" placeholder="re-password"/>
+                <input type="checkbox"/>
+                <label class="p-1"> I accept the Terms and Conditions and Privacy Policy</label>
+                <button class="btn btn-secondary my-2">REGISTER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!----------------------------------------------------------------------------------->
+        
+        <div class="beforeHeader"></div>   
+        
+        
+        
+        <section class="homeHeader">
+    <div class="homeHeaderInfo row justify-content-between">
+        <div class="p-5 home1 col-md-3">
+            <div class="homeDate">
+                <p>Site of the day: Sept 08, 2019 </p>
+            </div>  
+            <div class="homeBtn">
+            <a href="#"><button class="btn btn-primary mr-1" style="color: white">Viste site</button></a>
+            <a href="#"><button class="btn btn-collect mr-1" style="color: white">Collect</button></a>
+            </div>    
+        </div>
+        <div class="col-md-6 homeHeaderContent d-flex justify-content-center align-items-center">
+            <div class="text-center my-3">
+                <h1>Purple, Rock, Scissors!</h1>
+                <p>By <a href="#">Purple, Rock, Scissors </a> from United states with 7.2</p>
+                <div class="d-flex justify-content-center align-items-center">
+<ul class="display-container">
+<li class="note-display" data-note="7.50">
+<div class="circle">
+<svg width="84" height="84" class="circle__svg">
+  <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--path"></circle>
+  <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--fill"></circle>
+</svg>
+
+<div class="percent">
+  <span class="percent__int">0.</span>
+  <span class="percent__dec">00</span>
+</div>
+</div>
+
+<span class="label">Design</span>
+</li>
+
+<li class="note-display" data-note="9.27">
+<div class="circle">
+<svg width="84" height="84" class="circle__svg">
+  <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--path"></circle>
+  <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--fill"></circle>
+</svg>
+
+<div class="percent">
+  <span class="percent__int">0.</span>
+  <span class="percent__dec">00</span>
+</div>
+</div>
+
+<span class="label">Usability</span>
+</li>
+
+<li class="note-display" data-note="6.93">
+<div class="circle">
+<svg width="84" height="84" class="circle__svg">
+  <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--path"></circle>
+  <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--fill"></circle>
+</svg>
+
+<div class="percent">
+  <span class="percent__int">0.</span>
+  <span class="percent__dec">00</span>
+</div>
+</div>
+
+<span class="label">Creativity</span>
+</li>
+
+<li class="note-display" data-note="8.72">
+<div class="circle">
+<svg width="84" height="84" class="circle__svg">
+  <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--path"></circle>
+  <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--fill"></circle>
+</svg>
+
+<div class="percent">
+  <span class="percent__int">0.</span>
+  <span class="percent__dec">00</span>
+</div>
+</div>
+
+<span class="label">Content</span>
+</li>
+</ul>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="p-5 col-md-3 align-items-end members">
+            <div class="membersBtn d-flex">
+            <a href="#"><button class="btn btn-collect mr-1" style="color: white">VOTES</button></a>
+            <img src="../../assets/2 (1).jpg"/>
+            <img src="../../assets/2 (3).jpg"/>
+            <img src="../../assets/5 (1).jpg"/>
+            <img src="../../assets/3 (5).jpg"/>
+            <img src="../../assets/3 (1).jpg"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- -------------------------------------WINNERS------------------------------------------------------ -->
+<div class="winners">
+<div class="p-5">
+<span class="winnersTitle">Sites of the day </span>
+<span>Previous Winners</span>
+<div class="py-4">
+  <div class="row ">
+    <!-- -->
+    <div class="col-lg-3 col-md-6 my-2">
+      <div class="winnersImg win">
+        <img class="img-fluid" src="../../assets/05-thumbnail.jpg"/>
+        <div class="imgLayer">
+          <button class="btn m-1">09</button>
+          <button class="btn m-1">collect</button>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="winnersInfo win p-2">
+        <a href="#">Purple, Rock, Scissors!</a>
+        <div class="d-flex justify-content-between py-2">
+          <p>From United States</p>
+          <p>September 07, 2019</p>           
+        </div>
+        <div class="winnersIco d-flex justify-content-between">
+          <div class="d-flex">
+          <img src="../../assets/2 (1).jpg"/>
+          <p class="px-1">By <a href="#">PRPLMARK</a></p>
+        </div>
+          <div>
+            <button class="btn btn-primary">HM</button>
+            <button class="btn btn-danger">DIV</button>
+            <button class="btn btn-warning">SOLD</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -->
+    <div class="col-lg-3 col-md-6 my-2 ">
+        <div class="winnersImg win">
+          <img class="img-fluid" src="../../assets/7.jpg"/>
+          <div class="imgLayer">
+            <button class="btn m-1">09</button>
+            <button class="btn m-1">collect</button>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="winnersInfo win p-2">
+          <a href="#">Purple, Rock, Scissors!</a>
+          <div class="d-flex justify-content-between py-2">
+            <p>From United States</p>
+            <p>September 07, 2019</p>           
+          </div>
+          <div class="winnersIco d-flex justify-content-between">
+            <div class="d-flex">
+            <img src="../../assets/2 (1).jpg"/>
+            <p class="px-1">By <a href="#">PRPLMARK</a></p>
+          </div>
+            <div>
+              <button class="btn btn-primary">HM</button>
+              <button class="btn btn-danger">DIV</button>
+              <button class="btn btn-warning">SOLD</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -->
+      <div class="col-lg-3 col-md-6 my-2">
+          <div class="winnersImg win">
+            <img class="img-fluid" src="../../assets/05-thumbnail.jpg"/>
+            <div class="imgLayer">
+              <button class="btn m-1">09</button>
+              <button class="btn m-1">collect</button>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="winnersInfo win p-2">
+            <a href="#">Purple, Rock, Scissors!</a>
+            <div class="d-flex justify-content-between py-2">
+              <p>From United States</p>
+              <p>September 07, 2019</p>           
+            </div>
+            <div class="winnersIco d-flex justify-content-between">
+              <div class="d-flex">
+              <img src="../../assets/2 (1).jpg"/>
+              <p class="px-1">By <a href="#">PRPLMARK</a></p>
+            </div>
+              <div>
+                <button class="btn btn-primary">HM</button>
+                <button class="btn btn-danger">DIV</button>
+                <button class="btn btn-warning">SOLD</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- -->
+        <div class="col-lg-3 col-md-6 my-2">
+            <div class="winnersImg win">
+              <img class="img-fluid" src="../../assets/7.jpg"/>
+              <div class="imgLayer">
+                <button class="btn m-1">09</button>
+                <button class="btn m-1">collect</button>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+            <div class="winnersInfo win p-2">
+              <a href="#">Purple, Rock, Scissors!</a>
+              <div class="d-flex justify-content-between py-2">
+                <p>From United States</p>
+                <p>September 07, 2019</p>           
+              </div>
+              <div class="winnersIco d-flex justify-content-between">
+                <div class="d-flex">
+                <img src="../../assets/2 (1).jpg"/>
+                <p class="px-1">By <a href="#">PRPLMARK</a></p>
+              </div>
+                <div>
+                  <button class="btn btn-primary">HM</button>
+                  <button class="btn btn-danger">DIV</button>
+                  <button class="btn btn-warning">SOLD</button>
+                </div>
+              </div>
+            </div>
+          </div>                      
+
+  </div>
+</div>
+</div>
+</div>
+
+<!-- --------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------NOMINEES------------------------------------------------------ -->
+<div class="nominees">
+<div class="p-5">
+  <span class="nomineesTitle">Nominees </span>
+  <span>We need your vote!</span>
+  <div class="py-4">
+    <div class="row ">
+      <!-- -->
+      <div class="col-lg-3 col-md-6 my-2">
+        <div class="nomineesImg win">
+          <img class="img-fluid" src="../../assets/03-thumbnail.jpg"/>
+          <div class="imgLayer">
+            <button class="btn m-1">09</button>
+            <button class="btn m-1">collect</button>
+            <div class="clearfix"></div>
+            <div class="mt-5 d-flex justify-content-center">
+                <div>
+                  <button style="color: black" class="btn btn-light">VOTE</button>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="nomineesInfo win p-2">
+          <a href="#">Purple, Rock, Scissors!</a>
+          <div class="d-flex justify-content-between py-2">
+            <p>From United States</p>
+            <p>September 07, 2019</p>           
+          </div>
+          <div class="nomineesIco d-flex justify-content-between">
+            <div class="d-flex">
+            <img src="../../assets/2 (1).jpg"/>
+            <p class="px-1">By <a href="#">PRPLMARK</a></p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- -->
+      <!-- -->
+      <div class="col-lg-3 col-md-6 my-2">
+          <div class="nomineesImg win">
+            <img class="img-fluid" src="../../assets/04-thumbnail.jpg"/>
+            <div class="imgLayer">
+              <button class="btn m-1">09</button>
+              <button class="btn m-1">collect</button>
+              <div class="clearfix"></div>
+              <div class="mt-5 d-flex justify-content-center">
+                  <div>
+                    <button style="color: black" class="btn btn-light">VOTE</button>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="nomineesInfo win p-2">
+            <a href="#">Purple, Rock, Scissors!</a>
+            <div class="d-flex justify-content-between py-2">
+              <p>From United States</p>
+              <p>September 07, 2019</p>           
+            </div>
+            <div class="nomineesIco d-flex justify-content-between">
+              <div class="d-flex">
+              <img src="../../assets/2 (1).jpg"/>
+              <p class="px-1">By <a href="#">PRPLMARK</a></p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- -->
+      <!-- -->
+      <div class="col-lg-3 col-md-6 my-2">
+          <div class="nomineesImg win">
+            <img class="img-fluid" src="../../assets/02-thumbnail.jpg"/>
+            <div class="imgLayer">
+              <button class="btn m-1">09</button>
+              <button class="btn m-1">collect</button>
+              <div class="clearfix"></div>
+              <div class="mt-5 d-flex justify-content-center">
+                  <div>
+                    <button style="color: black" class="btn btn-light">VOTE</button>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="nomineesInfo win p-2">
+            <a href="#">Purple, Rock, Scissors!</a>
+            <div class="d-flex justify-content-between py-2">
+              <p>From United States</p>
+              <p>September 07, 2019</p>           
+            </div>
+            <div class="nomineesIco d-flex justify-content-between">
+              <div class="d-flex">
+              <img src="../../assets/2 (1).jpg"/>
+              <p class="px-1">By <a href="#">PRPLMARK</a></p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- -->
+      <!-- -->
+      <div class="col-lg-3 col-md-6 my-2">
+          <div class="nomineesImg win">
+            <img class="img-fluid" src="../../assets/03-thumbnail.jpg"/>
+            <div class="imgLayer">
+              <button class="btn m-1">09</button>
+              <button class="btn m-1">collect</button>
+              <div class="clearfix"></div>
+              <div class="mt-5 d-flex justify-content-center">
+                  <div>
+                    <button style="color: black" class="btn btn-light">VOTE</button>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="nomineesInfo win p-2">
+            <a href="#">Purple, Rock, Scissors!</a>
+            <div class="d-flex justify-content-between py-2">
+              <p>From United States</p>
+              <p>September 07, 2019</p>           
+            </div>
+            <div class="nomineesIco d-flex justify-content-between">
+              <div class="d-flex">
+              <img src="../../assets/2 (1).jpg"/>
+              <p class="px-1">By <a href="#">PRPLMARK</a></p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- -->                          
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- --------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------Directory------------------------------------------------------ -->
+<div class="nominees">
+<div class="p-5">
+<span class="nomineesTitle">Directory  </span>
+<span>Find the Best Digital Agencies & Professionals</span>
+<div class="py-4">
+  <div class="row ">
+
+    <!-- -->
+    <div class="col-lg-3 col-md-6 my-2">
+        <div class="  px-3">
+          <p class="py-3">Professional Directory</p>
+          <p style="font-weight: bolder ; font-size: 24px">Discover the best agencies and professionals in</p>
+        </div>
+        <div class=" p-3">
+          <div class="">
+              <span style="color: #49c5b6 ; cursor:pointer ; font-size: 24px " class="dropdown-toggle"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Egypt</span>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Italy</a>
+                <a class="dropdown-item" href="#">England</a>
+                <a class="dropdown-item" href="#">China</a>
+              </div>
+            </div>
+
+          <div class="nomineesIco py-4">
+            
+              <div>
+                  <button class="btn btn-light">Discover</button>
+              </div>
+          
+          </div>
+        </div>
+      </div>
+      <!-- --> 
+
+    <!-- -->
+    <div class="col-lg-3 col-md-6 my-2">
+        <div class="nomineesImg win">
+          <img class="img-fluid" src="../../assets/03-thumbnail.jpg"/>
+          <div class="imgLayer">
+          </div>
+        </div>
+        <div class="nomineesInfo win p-2">
+          <a href="#">Purple, Rock, Scissors!</a>
+          <div class="d-flex justify-content-between py-2">
+            <p>Added to <a href="#">Directory</a> from <span style="font-weight: bolder"> United States</span></p>         
+          </div>
+          <div class="nomineesIco">
+            <div class="d-flex justify-content-between">
+              <div>
+                  <img src="../../assets/2 (3).jpg"/>
+                  <img src="../../assets/5 (1).jpg"/>
+                  <img src="../../assets/3 (5).jpg"/>
+                  <img src="../../assets/3 (1).jpg"/>
+              </div>
+              <div>
+                <button class="btn btn-light">Follow</button>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- --> 
+      
+    <!-- -->
+    <div class="col-lg-3 col-md-6 my-2">
+        <div class="nomineesImg win">
+          <img class="img-fluid" src="../../assets/01-thumbnail.jpg"/>
+          <div class="imgLayer">
+          </div>
+        </div>
+        <div class="nomineesInfo win p-2">
+          <a href="#">Purple, Rock, Scissors!</a>
+          <div class="d-flex justify-content-between py-2">
+            <p>Added to <a href="#">Directory</a> from <span style="font-weight: bolder"> United States</span></p>         
+          </div>
+          <div class="nomineesIco">
+            <div class="d-flex justify-content-between">
+              <div>
+                  <img src="../../assets/2 (3).jpg"/>
+                  <img src="../../assets/5 (1).jpg"/>
+                  <img src="../../assets/3 (5).jpg"/>
+                  <img src="../../assets/3 (1).jpg"/>
+              </div>
+              <div>
+                <button class="btn btn-light">Follow</button>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- --> 
+
+    <!-- -->
+    <div class="col-lg-3 col-md-6 my-2">
+        <div class="nomineesImg win">
+          <img class="img-fluid" src="../../assets/06-thumbnail.jpg"/>
+          <div class="imgLayer">
+          </div>
+        </div>
+        <div class="nomineesInfo win p-2">
+          <a href="#">Purple, Rock, Scissors!</a>
+          <div class="d-flex justify-content-between py-2">
+            <p>Added to <a href="#">Directory</a> from <span style="font-weight: bolder"> United States</span></p>         
+          </div>
+          <div class="nomineesIco">
+            <div class="d-flex justify-content-between">
+              <div>
+                  <img src="../../assets/2 (3).jpg"/>
+                  <img src="../../assets/5 (1).jpg"/>
+                  <img src="../../assets/3 (5).jpg"/>
+                  <img src="../../assets/3 (1).jpg"/>
+              </div>
+              <div>
+                <button class="btn btn-light">Follow</button>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- -->           
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- --------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------Resources------------------------------------------------------ -->
+<div class="nominees">
+<div class="p-5">
+  <span class="nomineesTitle">Resources   </span>
+  <span>Stuff Digital Designers Love!</span>
+  <div class="py-4">
+    <div class="row ">
+      <!-- -->
+      <div class="col-lg-3 col-md-6 my-2">
+          <div class="nomineesImg win">
+            <img class="img-fluid" src="../../assets/19.png"/>
+            <div class="imgLayer">
+            </div>
+          </div>
+          <div class="nomineesInfo win p-2">
+              <p class="resource">In the mind of Orkestra: Building a website that kills the traditional agency model.</p>
+            <div class="d-flex justify-content-between py-2">
+              <p>Added to <a href="#">Articles</a></p>
+              <p>September 07, 2019</p>           
+            </div>
+            <div class="nomineesIco d-flex justify-content-between">
+              <div class="d-flex">
+              <img src="../../assets/2 (1).jpg"/>
+              <p class="px-1">By <a href="#">PRPLMARK</a></p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- -->
+                  <!-- -->
+      <div class="col-lg-3 col-md-6 my-2">
+          <div class="nomineesImg win">
+            <img class="img-fluid" src="../../assets/19.png"/>
+            <div class="imgLayer">
+            </div>
+          </div>
+          <div class="nomineesInfo win p-2">
+
+              <p class="resource">In the mind of Orkestra: Building a website that kills the traditional agency model.</p>
+
+            <div class="d-flex justify-content-between py-2">
+                <p>Added to <a href="#">Articles</a></p>
+              <p>September 07, 2019</p>           
+            </div>
+            <div class="nomineesIco d-flex justify-content-between">
+              <div class="d-flex">
+              <img src="../../assets/2 (1).jpg"/>
+              <p class="px-1">By <a href="#">PRPLMARK</a></p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- -->
+                  <!-- -->
+      <div class="col-lg-3 col-md-6 my-2">
+          <div class="nomineesImg win">
+            <img class="img-fluid" src="../../assets/19.png"/>
+            <div class="imgLayer">
+            </div>
+          </div>
+          <div class="nomineesInfo win p-2">
+              <p class="resource">In the mind of Orkestra: Building a website that kills the traditional agency model.</p>
+            <div class="d-flex justify-content-between py-2">
+                <p>Added to <a href="#">Articles</a></p>
+              <p>September 07, 2019</p>           
+            </div>
+            <div class="nomineesIco d-flex justify-content-between">
+              <div class="d-flex">
+              <img src="../../assets/2 (1).jpg"/>
+              <p class="px-1">By <a href="#">PRPLMARK</a></p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- -->
+                  <!-- -->
+      <div class="col-lg-3 col-md-6 my-2">
+          <div class="nomineesImg win">
+            <img class="img-fluid" src="../../assets/19.png"/>
+            <div class="imgLayer">
+            </div>
+          </div>
+          <div class="nomineesInfo win p-2">
+            <p class="resource">In the mind of Orkestra: Building a website that kills the traditional agency model.</p>
+            <div class="d-flex justify-content-between py-2">
+                <p>Added to <a href="#">Articles</a></p>
+              <p>September 07, 2019</p>           
+            </div>
+            <div class="nomineesIco d-flex justify-content-between">
+              <div class="d-flex">
+              <img src="../../assets/2 (1).jpg"/>
+              <p class="px-1">By <a href="#">PRPLMARK</a></p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- -->
+                                      
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- --------------------------------------------------------------------------------------------------- -->
+        
+        
+     
+        
+        <!----------------------------------------------------------------------------------->
+      <section>
+    <div class="p-5">
+        <div class="d-flex justify-content-between">
+            <div>
+                <p>The awards for design, creativity and innovation on the Internet</p>
+            </div>
+            <div>
+                <span>Next Conferences <a class="px-3" href="#"> New York</a> and <a class="px-3" href="#">Tokyo</a></span>
+            </div>
+        </div>
+        <div class="my-4">
+
+            <a class="pr-3" href="professional-directory.html">Directory</a>
+            <a class="pr-3" href="jobs.html">Jobs</a>
+            <a class="pr-3" href="contact.html">Contact Us</a>
+            <a class="pr-3" href="cookies.html">Cookies Policy</a>
+            <a class="pr-3" href="terms.html">Legal Terms</a>
+            <a class="pr-3" href="policy.html"> Privacy Policy</a>
+            
+        </div>
+        <div>   
+            <span>Private Cloud by <a class="px-2" href="#">Stackscale</a></span>
+        </div>
+
+    </div>
+
+</section>
+ <!----------------------------------------------------------------------------------->       
+        
+        
+        
+    <script src="js/jquery-3.3.1.min.js"></script>    
+    <script src="js/popper.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>  
+    <script src="js/wow.js"></script> 
+    <script src="js/index.js"></script>  
+    <script src="js/scripts.js"></script>     
+     </body>
+</html>

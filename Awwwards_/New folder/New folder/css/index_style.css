@@ -1,0 +1,672 @@
+
+nav
+{
+    border-bottom: solid 1px #ddd;
+}
+.beforeHeader
+{
+    height: 150px;
+    width: 100%;
+}
+/*---------------------------(header)------------------------------------*/
+.header
+{
+    background-color: whitesmoke;
+}
+.header p
+{
+    margin-bottom: 0px;
+}
+#submitBtn
+{
+    background-color: cornflowerblue;
+    height: 100%;
+}
+
+.login
+{
+    color: black
+}
+
+.login:hover
+{
+    color: royalblue;
+}
+
+
+/*---------------------------login/register--------------------------------------------*/
+.register
+{
+    cursor: pointer;
+    color: aqua;
+}
+/*--------------------------about us--------------------------------------*/
+.title
+{
+    font-size: 35px;
+    color: black;
+    font-weight: bolder;
+}
+.aboutUsHeader span
+{
+    font-weight: bolder;    
+}
+
+.about-img
+{
+   background-image: url(../assets/certificate.jpg);
+    background-size: cover;
+    height: 350px; 
+    width: 100%;
+}
+.title-about
+{
+    border-bottom: 2px solid black;
+    width: 8%;
+}
+.headTitle
+{
+    border-bottom: 2px solid black;
+    font-weight: bolder;
+    font-size: 18px;
+
+}
+.aboutJury 
+{
+    cursor: pointer;
+}
+.aboutJury:hover
+{
+    color: cornflowerblue;
+}
+
+/*----------------------------------------------*/
+
+*
+{
+    transition: all 0.2s;
+}
+
+a
+{
+    text-decoration: none;
+}
+nav
+{
+    border-bottom: solid 1px #ddd;
+}
+
+nav form
+{
+    margin: 0px;
+}
+.secNav
+{
+    display: flex;
+    align-items: center;
+}
+
+.text
+{
+    padding-top: 20px;
+}
+.text p 
+{
+    font-size: 14px;
+}
+.text p a
+{
+    position: relative;
+    z-index: 6;
+    color: #49c5b6;
+    font-weight: 600;
+}
+.text p a:hover
+{
+    color: black;
+}
+.text .container .row .col-1
+{
+    position: relative;
+    font-size: 14px;
+}
+.empty .container .text .container .row .col-1:hover .polygon
+{
+    bottom: -35px;
+}
+.text .container .row .col-1 img
+{
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.text .container .row .col-1 img:hover
+{
+    opacity: 0.6;
+    transition:  0.5s;
+}
+
+.polygon
+{
+    transition: bottom 1s;
+    text-align: center;
+    opacity: 0;
+    padding-top: 30px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 54% 75%, 49% 81%, 43% 75%, 0% 75%);
+    height: 300px;
+    width: 170px;
+    position: absolute;
+    left: -67px;
+    bottom: -25px;
+    background-color:#ebebeb;
+}
+
+.polygon span p
+{
+    color: rgba(0,0,0,0.6);
+}
+.polygon a p
+{
+    color:black;
+    font-weight: 600;
+}
+.polygon a p:hover
+{
+    color: gray;
+}
+section
+{
+    background-color: #f5f5f5
+}
+#item
+{
+    background-color: white
+}
+.secNav button
+{
+    border-radius: 0;
+}
+.dropdown-menu
+{
+    position: absolute;
+    z-index: 999;
+}
+.dropdown
+{
+    height: 100%;
+}
+.menuOverlay
+{
+    opacity: 0;
+    position: absolute;
+    z-index: 666;
+    display: none;
+    height: 100%;
+}
+.dropdown-menu
+{
+     margin-top: 0px;
+}
+
+/*--------------------------------------------------------------*/
+.titleHeader
+{
+    background-color: whitesmoke;
+}
+.line
+{
+    background-color: black;
+    height: 4px;
+    width: 6%;
+}
+.headerImg
+{
+    background-image: url(../../../assets/header.jpg);
+    height: 350px;
+    background-size: 100% 100%;
+}
+
+.info
+{
+    background-color: white;
+}
+/*-------------------------------------------*/
+
+.footerLink
+{
+    color: royalblue;
+}
+a
+{
+    font-weight: bolder;
+}
+/*-------------------------------*/
+ /*---------------------------home----------------------------------------*/
+ .homeHeader
+ {
+     background-image: url(../../../assets/127H.jpg);
+     height: 550px;
+     background-size: cover;
+ }
+ .homeHeaderInfo
+ {
+     color: white;
+     height: 100%;
+     background-color: rgba(0,0,0,0.6);
+ }
+ .homeHeaderContent
+ {
+     color: white;
+ }
+ .homeHeaderInfo h1
+ {
+     font-size: 45px;
+ }
+ .numbers .num
+ {
+     border-radius: 50%;
+     border: 2px solid;
+     
+ }
+ .membersBtn img
+ {
+     border-radius: 50%;
+     width: 25px;
+     height: 25px;;
+     margin-right: 1px;
+   }
+ .btn-collect
+ {
+     border-color: aqua;
+     background-color: transparent;
+ }
+ .btn-collect:hover
+ {
+     border-color: aqua;
+     background-color: rgba(0,0,0,0.6);
+ }
+ .home1
+ {
+     position: relative;
+ }
+ .homeDate
+ {
+     position: absolute;
+     top: 5%;
+     left: 5%;
+ }
+ .homeBtn
+ {
+     position: absolute;
+     bottom: 5%;
+     left: 5%;
+ }
+ .row
+ {
+     margin-left: 0;
+     margin-right: 0;
+ }
+ .members
+ {
+     position: relative;
+ }
+ .membersBtn
+ {
+     position: absolute;
+     bottom: 5%;
+     left: 5%;
+ }
+ /*-----------------------------------------------------------------------*/
+ @import url('https://fonts.googleapis.com/css?family=Nixie+One|Raleway:200');
+ 
+ 
+ 
+ 
+ 
+ .display-container {
+   margin: auto;
+   display: flex;
+ }
+ 
+ .note-display {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 25px;
+ }
+ 
+ .circle {
+   position: relative;
+ }
+ 
+ .circle__svg {
+   transform: rotate(-90deg);
+ }
+ 
+ .circle__progress {
+   fill: none;
+   stroke-width: 3;
+   stroke-opacity: 0.3;
+   stroke-linecap: round;
+ }
+ 
+ .circle__progress--fill {
+   --initialStroke: 0;
+   --transitionDuration: 0;
+   stroke-opacity: 1;
+   stroke-dasharray: var(--initialStroke);
+   stroke-dashoffset: var(--initialStroke);
+   transition: stroke-dashoffset var(--transitionDuration) ease;
+ }
+ 
+ .note-display:nth-child(1) .circle__progress { stroke: #AAFF00; }
+ .note-display:nth-child(2) .circle__progress { stroke: #FF00AA; }
+ .note-display:nth-child(3) .circle__progress { stroke: #AA00FF; }
+ .note-display:nth-child(4) .circle__progress { stroke: #00AAFF; }
+ 
+ .percent {
+   width: 100%;
+   top: 50%;
+   left: 50%;
+   position: absolute;
+   font-weight: bold;
+   text-align: center;
+   line-height: 28px;
+   transform: translate(-50%, -50%);
+ }
+ 
+ .percent__int { font-size: 28px; }
+ .percent__dec { font-size: 12px; }
+ 
+ .label {
+   font-family: 'Raleway', serif;
+   font-size: 14px;
+   text-transform: uppercase;
+   margin-top: 15px;
+ }
+ /*---------------------------------------------WINNERS------------------------------------------------------------*/
+ .winners
+ {
+   background-color: whitesmoke;
+ }
+ .win
+ {
+   background-color: white;
+ }
+ .winnersTitle
+ {
+   font-weight: bolder;
+ }
+ .winnersImg
+ {
+   position: relative;
+   overflow: hidden;
+ }
+ .winnersImg:hover .imgLayer
+ {
+   opacity: 1;
+ }
+ .winnersImg:hover img 
+ {
+   transform: scale(1.2,1.2)
+ }
+ .winnersImg img
+ {
+   transition: transform 1s;
+ }
+ .imgLayer
+ {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0,0,0,0.6);
+   opacity: 0;
+   transition: opacity 1s;
+ }
+ .imgLayer button
+ {
+   border-radius: 50%;
+   border: 1px solid white;
+   float: right;
+   color: white;
+ }
+ .winnersIco
+ {
+   font-size: 12px;
+ }
+ .winnersIco img
+ {
+   border-radius: 50%;
+   width: 25px;
+   height: 25px;;
+ }
+ .winnersIco button
+ {
+   font-size: 10px;
+   border-radius: 50%;
+   margin: 2px;
+ }
+ /*-----------------------------------------------------------------------------------*/
+ /*--------------------------------------nominees--------------------------------------------*/
+ .nominees
+ {
+   background-color: whitesmoke;
+ }
+ .win
+ {
+   background-color: white;
+ }
+ .nomineesTitle
+ {
+   font-weight: bolder;
+ }
+ .nomineesImg
+ {
+   position: relative;
+   overflow: hidden;
+ }
+ .nomineesImg:hover .imgLayer
+ {
+   opacity: 1;
+ }
+ .nomineesImg:hover img 
+ {
+   transform: scale(1.2,1.2)
+ }
+ .nomineesImg img
+ {
+   transition: transform 1s;
+ }
+ .imgLayer
+ {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0,0,0,0.6);
+   opacity: 0;
+   transition: opacity 1s;
+ }
+ .imgLayer button
+ {
+   border-radius: 50%;
+   border: 1px solid white;
+   float: right;
+   color: white;
+ }
+ .nomineesIco
+ {
+   font-size: 12px;
+ }
+ .nomineesIco img
+ {
+   border-radius: 50%;
+   width: 25px;
+   height: 25px;;
+ }
+ .nomineesIco button
+ {
+   font-size: 10px;
+   border-radius: 50%;
+   margin: 2px;
+ }
+ /*---------------------------------------------------------------------------------------*/
+ .resource 
+ {
+   font-weight: bold;
+ }
+/*---------------------------------------------*/
+
+.jobs
+{
+    background-color: whitesmoke;
+}
+.jobsInfo
+{
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 1s;
+    margin: 5px 0px;
+}
+.jobsInfo:hover
+{
+    background-color: rgb(230, 223, 223);
+}
+.jobsInfo img
+{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;;
+}
+.jobsInfo span
+{
+    font-weight: bolder;
+    font-size: 20px;
+}
+/*-------------------------------------------*/
+
+*
+{
+    transition: all 0.2s;
+}
+
+a
+{
+    text-decoration: none;
+    color: #49c5b6;
+    font-weight: 600;
+}
+p
+{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+section
+{
+    background-color: #f5f5f5
+}
+nav
+{
+    border-bottom: solid 1px #ddd;
+}
+
+nav form
+{
+    margin: 0px;
+}
+.secNav
+{
+    display: flex;
+    align-items: center;
+}
+.secNav button
+{
+    border-radius: 0;
+}
+.dropdown-menu
+{
+    position: absolute;
+    z-index: 999;
+}
+.dropdown
+{
+    height: 100%;
+}
+.menuOverlay
+{
+    opacity: 0;
+    position: absolute;
+    z-index: 666;
+    display: none;
+    height: 100%;
+}
+.dropdown-menu
+{
+     margin-top: 0px;
+}
+.card
+{
+    position: relative;
+}
+.card:hover .SearchIcon
+{
+    background-color: #ec3237;
+}
+.card-body
+{
+    padding-bottom: 0;
+}
+
+.SearchIcon
+{
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background-image: url(../../../assets/collections/prof/55a427118998b.jpeg);
+    background-position: center center;
+    background-size: cover;
+    left: 37%;
+    padding-top: 10px;
+    top: 40%;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+/*----------------------------------------*/
+.submit
+{
+    background-color: whitesmoke;
+}
+
+.submitImg
+{
+    background-image: url(../../../assets/jury-01.jpg);
+    background-size: 100% 100%;
+    color: white;
+    
+}
+
+.line
+{
+    background-color: white;
+    height: 4px;
+    width: 6%;
+}
+
+.img-Info
+{
+    
+    margin-top: 80%;
+
+}
+/*------------------------------------------*/
+
+
+
+
+
